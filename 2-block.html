@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>display: block;</title>
+	<link rel="stylesheet" href="./main.css">
+</head>
+<body>
+	<nav>
+		<a
+			aria-label="display: inline;"
+			href="./1-inline.html"
+		>←</a>
+
+		<a
+			aria-label="display: inline;"
+			href="./3-inline-block.html"
+		>→</a>
+	</nav>
+
+	<div class="logos">
+		<h1>display: block;</h1>
+
+		<div class="paypal">
+			<img
+				alt="PayPal logomark"
+				class="paypal-logomark js-element-to-style"
+				src="./img/paypal-logomark.svg"
+			/>
+
+			<img
+				alt="PayPal logotype"
+				class="paypal-logotype js-element-to-style"
+				src="./img/paypal-logotype.svg"
+			/>
+		</div>
+	</div>
+
+	<section class="notes">
+		<p class="notes-paragraph">
+			Useful CSS properties related to <code>display: block;</code>
+		</p>
+
+		<ul class="notes-list">
+			<li>
+				<code>width</code>
+
+				<div class="notes-buttons">
+					<button class="js-css-value active">25%</button>
+
+					<button class="js-css-value">10%</button>
+				</div>
+			</li>
+
+			<li>
+				<code>margin-block</code> (does get applied, but watch for margin collapse)
+
+				<div class="notes-buttons">
+					<button class="js-css-value active">12px</button>
+
+					<button class="js-css-value">24px</button>
+
+					<button class="js-css-value">48px</button>
+				</div>
+			</li>
+		</ul>
+	</section>
+
+	<script src="./main.js"></script>
+</body>
+</html>

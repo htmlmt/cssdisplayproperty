@@ -1,0 +1,190 @@
+/* 1. inline */
+.nintendo {
+	color: rgb(237 28 36);
+	font-family: 'Pretendo';
+	font-size: 6.5vw;
+	width: 100%;
+}
+
+/* 2. block */
+.paypal-logomark,
+.paypal-logotype {
+	display: block;
+	margin-block: 12px;
+	margin-inline: auto;
+}
+
+.paypal-logomark,
+.paypal-logotype {
+	width: 25%;
+}
+
+/* 3. inline-block */
+.apple-pay-logomark,
+.apple-pay-logotype {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+.apple-pay-logotype {
+	font-family: 'SF Pro';
+	font-size: 10.25vw;
+	font-weight: 500;
+	margin-block: 0;
+	margin-inline-start: 1vw;
+}
+
+/* 4. flex */
+
+.google {
+	align-items: flex-start;
+	background-image: url('./img/google-oo.svg');
+    background-position: 67px 0px;
+    background-repeat: repeat-x;
+    background-size: 89px;
+    display: flex;
+    height: 200px;
+    justify-content: space-between;
+    max-width: calc(100vw - 240px);
+    overflow: scroll;
+    position: relative;
+    resize: horizontal;
+}
+
+body:has([name="oo"]:checked) .google {
+	background-image: none;
+}
+
+.google-g,
+.google-gle{
+	background-color: white;
+}
+
+/* 5. grid */
+
+.microsoft {
+	display: grid;
+	column-gap: 12px;
+	row-gap: 12px;
+	grid-template-columns: repeat(2, 1fr);
+	width: 33.33%;
+}
+
+.microsoft-square-1 {
+	aspect-ratio: 1 / 1;
+	background-color: rgb(243, 83, 37);
+}
+
+.microsoft-square-2 {
+	aspect-ratio: 1 / 1;
+	background-color: rgb(129, 188, 6);
+}
+
+.microsoft-square-3 {
+	aspect-ratio: 1 / 1;
+	background-color: rgb(5, 166, 240);
+}
+
+.microsoft-square-4 {
+	aspect-ratio: 1 / 1;
+	background-color: rgb(255, 186, 8);
+}
+
+/* overall layout */
+
+* {
+	box-sizing: content-box;
+	outline-color: red;
+	outline-offset: 4px;
+}
+
+html,
+body {
+	min-height: 100vh;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	font-family: sans-serif;
+	justify-content: space-between;
+	margin: 0;
+	padding-inline: 64px;
+	text-align: center;
+}
+
+nav {
+	display: flex;
+	left: 0;
+	height: 100vh;
+	justify-content: space-between;
+	margin-inline: auto;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+nav a {
+	background-color: black;
+	color: white;
+	display: grid;
+	font-size: 4rem;
+	padding-inline: 16px;
+	place-items: center;
+	text-decoration: none;
+}
+
+.logos {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	gap: 24px;
+	margin-inline: auto;
+	max-width: 600px;
+	padding-block: 48px;
+	padding-inline: 24px;
+	place-items: center;
+	position: relative;
+	width: 100%;
+	z-index: 10;
+}
+
+.notes {
+	background-color: rgba(0, 0, 0, 0.05);
+	font-size: 1.5rem;
+	text-align: left;
+	padding-block: 16px;
+	padding-inline: 24px;
+	position: relative;
+	z-index: 10;
+}
+
+.notes-list,
+.notes-paragraph {
+	display: block;
+	margin-inline: auto;
+	max-width: 60ch;
+}
+
+.notes-buttons {
+	padding-block: 8px;
+}
+
+.notes-buttons button {
+	background-color: rgba(0, 0, 0, 0.75);
+	border: 0;
+	color: white;
+	cursor: pointer;
+	padding-block: 8px;
+	padding-inline: 12px;
+}
+
+.notes-buttons button.active {
+	background-color: rgb(80, 22, 197);
+}
+
+@font-face {
+	font-family: 'Pretendo';
+	src: url('./fonts/Pretendo.woff');
+}

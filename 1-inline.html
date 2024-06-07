@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>display: inline;</title>
+	<link rel="stylesheet" href="./main.css">
+</head>
+<body>
+	<nav>
+		<a
+			aria-label="display: grid;"
+			href="./5-grid.html"
+		>←</a>
+
+		<a
+			aria-label="display: block;"
+			href="./2-block.html"
+		>→</a>
+	</nav>
+
+	<div class="logos">
+		<h1>display: inline;</h1>
+
+		<div class="nintendo">
+			<span class="nintendo-logotype js-element-to-style">Nintendo</span>
+		</div>
+	</div>
+
+	<section class="notes">
+		<p class="notes-paragraph">
+			Useful CSS properties related to <code>display: inline;</code>
+		</p>
+
+		<ul class="notes-list">
+			<li>
+				<code>line-height</code>
+
+				<div class="notes-buttons">
+					<button class="js-css-value active">1.5</button>
+
+					<button class="js-css-value">1.75</button>
+
+					<button class="js-css-value">2</button>
+				</div>
+			</li>
+
+			<li>
+				<code>padding-block</code> (does not affect layout)
+
+				<div class="notes-buttons">
+					<button class="js-css-value active">0px</button>
+
+					<button class="js-css-value">24px</button>
+
+					<button class="js-css-value">48px</button>
+				</div>
+			</li>
+
+			<li>
+				<code>margin-block</code> (does not get applied)
+
+				<div class="notes-buttons">
+					<button class="js-css-value active">0px</button>
+
+					<button class="js-css-value">24px</button>
+
+					<button class="js-css-value">48px</button>
+				</div>
+			</li>
+
+			<li>
+				<code>height</code> (does not get applied)
+
+				<div class="notes-buttons">
+					<button class="js-css-value active">auto</button>
+
+					<button class="js-css-value">24px</button>
+
+					<button class="js-css-value">48px</button>
+				</div>
+			</li>
+
+			<li>
+				<code>width</code> (does not get applied)
+
+				<div class="notes-buttons">
+					<button class="js-css-value active">auto</button>
+
+					<button class="js-css-value">24px</button>
+
+					<button class="js-css-value">48px</button>
+				</div>
+			</li>
+		</ul>
+	</section>
+
+	<script src="./main.js"></script>
+</body>
+</html>

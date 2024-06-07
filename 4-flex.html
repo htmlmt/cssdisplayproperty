@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>display: flex;</title>
+	<link rel="stylesheet" href="./main.css">
+</head>
+<body>
+	<nav>
+		<a
+			aria-label="display: inline-block;"
+			href="./3-inline-block.html"
+		>←</a>
+
+		<a
+			aria-label="display: grid;"
+			href="./5-grid.html"
+		>→</a>
+	</nav>
+
+	<div class="logos">
+		<h1>display: flex;</h1>
+
+		<div
+			class="google js-element-to-style"
+			style="width: 260px;"
+		>
+			<div class="google-g">
+				<svg
+					height="68.88"
+					viewBox="0 0 67.11 68.88"
+					xmlns="http://www.w3.org/2000/svg"
+					width="67.11"
+				>
+					<path
+						d="M34.93,40.94v-9.41h31.71c.31,1.64.47,3.58.47,5.68,0,7.06-1.93,15.79-8.15,22.01-6.05,6.3-13.78,9.66-24.02,9.66C15.96,68.88,0,53.42,0,34.44S15.96,0,34.94,0c10.5,0,17.98,4.12,23.6,9.49l-6.64,6.64c-4.03-3.78-9.49-6.72-16.97-6.72-13.86,0-24.7,11.17-24.7,25.03s10.84,25.03,24.7,25.03c8.99,0,14.11-3.61,17.39-6.89,2.66-2.66,4.41-6.46,5.1-11.65h-22.49Z"
+						style="fill: #4285f4; stroke-width: 0px;"
+					/>
+				</svg>
+			</div>
+
+			<div class="google-gle">
+				<svg
+					height="86.23"
+					viewBox="0 0 102.77 86.23"
+					xmlns="http://www.w3.org/2000/svg"
+					width="102.77"
+				>
+					<path
+						d="M42.52,23.34v39.82c0,16.38-9.66,23.07-21.08,23.07-10.75,0-17.22-7.19-19.66-13.07l8.48-3.53c1.51,3.61,5.21,7.87,11.17,7.87,7.31,0,11.84-4.51,11.84-13v-3.19h-.34c-2.18,2.69-6.38,5.04-11.68,5.04-11.09,0-21.25-9.66-21.25-22.09s10.16-22.26,21.25-22.26c5.29,0,9.49,2.35,11.68,4.96h.34v-3.61h9.25ZM33.96,44.26c0-7.81-5.21-13.52-11.84-13.52s-12.35,5.71-12.35,13.52,5.63,13.36,12.35,13.36,11.84-5.63,11.84-13.36Z"
+						style="fill: #4285f4; stroke-width: 0px;"
+					/>
+					<path
+						d="M57.77,0v65h-9.5V0h9.5Z"
+						style="fill: #34a853; stroke-width: 0px;"
+					/>
+					<path
+						d="M94.79,51.48l7.56,5.04c-2.44,3.61-8.32,9.83-18.48,9.83-12.6,0-22.01-9.74-22.01-22.18,0-13.19,9.49-22.18,20.92-22.18s17.14,9.16,18.98,14.11l1.01,2.52-29.65,12.28c2.27,4.45,5.8,6.72,10.75,6.72s8.4-2.44,10.92-6.14h0ZM71.52,43.5l19.82-8.23c-1.09-2.77-4.37-4.7-8.23-4.7-4.95,0-11.84,4.37-11.59,12.93Z"
+						style="fill: #ea4335; stroke-width: 0px;"
+					/>
+				</svg>
+			</div>
+		</div>
+
+		<fieldset>
+			<label for="oo">Hide OO?</label>
+			<input
+				id="oo"
+				name="oo"
+				type="checkbox"
+			>
+		</fieldset>
+	</div>
+
+	<section class="notes">
+		<p class="notes-paragraph">
+			Useful CSS properties related to <code>display: flex;</code>
+		</p>
+
+		<ul class="notes-list">
+			<li>
+				<code>align-items</code>
+
+				<div class="notes-buttons">
+					<button class="js-css-value default-flex-value active">flex-start</button>
+
+					<button class="js-css-value">center</button>
+
+					<button class="js-css-value">flex-end</button>
+				</div>
+			</li>
+
+			<li>
+				<code>justify-content</code>
+
+				<div class="notes-buttons">
+					<button class="js-css-value default-flex-value active">space-between</button>
+
+					<button class="js-css-value">center</button>
+
+					<button class="js-css-value">flex-start</button>
+
+					<button class="js-css-value">flex-end</button>
+
+					<button class="js-css-value">space-around</button>
+
+					<button class="js-css-value">space-evenly</button>
+				</div>
+			</li>
+
+			<li>
+				<code>flex-wrap</code>
+
+				<div class="notes-buttons">
+					<button class="js-css-value default-flex-value active">nowrap</button>
+
+					<button class="js-css-value">wrap</button>
+				</div>
+			</li>
+
+			<li>
+				<code>flex-direction</code>
+
+				<div class="notes-buttons">
+					<button class="js-css-value default-flex-value active">row</button>
+
+					<button class="js-css-value">row-reverse</button>
+
+					<button class="js-css-value">column</button>
+
+					<button class="js-css-value">column-reverse</button>
+				</div>
+			</li>
+		</ul>
+	</section>
+
+	<script src="./main.js"></script>
+</body>
+</html>

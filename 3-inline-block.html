@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>display: inline-block;</title>
+	<link rel="stylesheet" href="./main.css">
+</head>
+<body>
+	<nav>
+		<a
+			aria-label="display: inline;"
+			href="./2-block.html"
+		>←</a>
+
+		<a
+			aria-label="display: inline;"
+			href="./4-flex.html"
+		>→</a>
+	</nav>
+
+	<div class="logos">
+		<h1>display: inline-block;</h1>
+
+		<div class="apple-pay">
+			<svg class="apple-pay-logomark js-element-to-style" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 137.54 169.11" width="6vw">
+				<path d="M93.54,27.1c-6,7.1-15.6,12.7-25.2,11.9-1.2-9.6,3.5-19.8,9-26.1C83.34,5.6,93.84.4,102.34,0c1,10-2.9,19.8-8.8,27.1M102.24,40.9c-13.9-.8-25.8,7.9-32.4,7.9s-16.8-7.5-27.8-7.3c-14.3.2-27.6,8.3-34.9,21.2-15,25.8-3.9,64,10.6,85,7.1,10.4,15.6,21.8,26.8,21.4,10.6-.4,14.8-6.9,27.6-6.9s16.6,6.9,27.8,6.7c11.6-.2,18.9-10.4,26-20.8,8.1-11.8,11.4-23.3,11.6-23.9-.2-.2-22.4-8.7-22.6-34.3-.2-21.4,17.5-31.6,18.3-32.2-10-14.8-25.6-16.4-31-16.8" style="fill: #000; stroke-width: 0px;"/>
+			</svg><p class="apple-pay-logotype js-element-to-style">Pay</p>
+		</div>
+	</div>
+
+	<section class="notes">
+		<p class="notes-paragraph">
+			Useful CSS properties related to <code>display: inline-block;</code>
+		</p>
+
+		<ul class="notes-list">
+			<li>
+				<code>vertical-align</code>
+
+				<div class="notes-buttons">
+					<button class="js-css-value active">baseline</button>
+
+					<button class="js-css-value">bottom</button>
+
+					<button class="js-css-value">top</button>
+				</div>
+			</li>
+
+			<li>
+				<code>padding-block</code> (does affect layout)
+
+				<div class="notes-buttons">
+					<button class="js-css-value active">0px</button>
+
+					<button class="js-css-value">24px</button>
+
+					<button class="js-css-value">48px</button>
+				</div>
+			</li>
+
+			<li>
+				<code>margin-block</code> (does get applied)
+
+				<div class="notes-buttons">
+					<button class="js-css-value active">0px</button>
+
+					<button class="js-css-value">24px</button>
+
+					<button class="js-css-value">48px</button>
+				</div>
+			</li>
+
+			<li>
+				<code>height</code> (does get applied to image)
+
+				<div class="notes-buttons">
+					<button class="js-css-value active">auto</button>
+
+					<button class="js-css-value">24px</button>
+
+					<button class="js-css-value">48px</button>
+				</div>
+			</li>
+
+			<li>
+				<code>width</code> (does get applied)
+
+				<div class="notes-buttons">
+					<button class="js-css-value active">auto</button>
+
+					<button class="js-css-value">48px</button>
+
+					<button class="js-css-value">24px</button>
+				</div>
+			</li>
+		</ul>
+	</section>
+
+	<script src="./main.js"></script>
+</body>
+</html>
